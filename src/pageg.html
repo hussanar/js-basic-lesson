@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ThisIsAString = 'this is a string';
+        let alsoAString = '25';
+        let IsANumber = 25;
+        let isEqual = (alsoAString == IsANumber);
+        console.log(isEqual);
+        isEqual = (alsoAString === IsANumber);
+        console.log(isEqual);
+        let concat = alsoAString + IsANumber;
+        console.log(concat);
+        let addition = IsANumber + IsANumber;
+        console.log(addition);
+        let alsoANumber = 3.05;
+        let floatError = 0.06 + 0.01;
+        console.log(floatError);
+        let anExponent = 1.23e+3;
+        console.log(anExponent);
+        // let isTrue = istrue;
+        // console.log(isTrue);
+        // let isFalse = false;
+        // console.log(isFalse);
+        let isArray = [0, 'one', 2, 3, '4', 5];
+        console.log(isArray);
+        let valueFromArray = isArray[4];
+        console.log(valueFromArray);
+        //java script objects
+        let isObject = {
+            'color': 'blue',
+            'dog': 'bark',
+            'array': [0, 1, 2, 3, 4, 5],
+            'myfunc': function () {
+                console.log('do some thing');
+            }
+
+        }
+        let dog1 = isObject.dog;
+        console.log(dog1);
+        isObject.myfunc();
+        let funcA = function () {
+            return "this day is a good day";
+        }
+        let funcB = function () {
+            return "100+200";
+        }
+        let resultA = funcA();
+        console.log(resultA);
+        let resultB = funcB();
+        console.log(resultB);
+
+
+    </script>
+</body>
+
+</html>

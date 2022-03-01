@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs</title>
+</head>
+
+<body>
+    <!--
+    <input placeholder="enter your eamail" id="userInput" size="60"/>
+    <button onclick='userSubmit()'>Submit</button>
+    <br>
+    <p><input placeholder="enter your city heare" id='txt2' onkeyup="userSubmitA('txt2')"/></p>
+  <div id="result"></div>
+  <script type="text/javascript">
+      document.writeln('<p>hello</p>');
+
+      function userSubmit(){
+          const UI=document.getElementById('userinput').value;
+          Document.getElementById('result').interHTML
+
+      }*/-->
+    <input placeholder="enter your name here" id='userInput' size=60 />
+
+    <button onclick='userSubmit()'> Submit</button>
+
+    <br>
+
+    <p><input placeholder="enter your city here" id='txt2' onkeyUp="userSubmitA('txt2')" /> </p>
+
+    <p>
+
+    <div id='result'></div>
+
+    <script type='text/javascript'> document.writeln('<p>Hello</p>');
+
+        function userSubmit() {
+
+            const ui = document.getElementById('userInput").value; document.getElementById("result').innerHTML = `You typed: $(ui)`;
+        }
+        function userSubmitA(v1) {
+            const ui = document.getElementById(v1).value;
+
+            document.getElementById('result').innerHTML = `You typed: ${ui}`;
+
+        }
+
+    </script>
+    <!-- <script type='text/javascript'>
+        let x=5;
+        /*
+        document.writeln('</src'+'ipt>');
+    </script> -->
+
+
+
+    <script type="text/javascript">
+
+        let x = 5;
+        /* The browser will break the Javascript when it sees this tag.
+    
+        Everything from tag forward is now being processed as HTML !
+    
+        This is a bad thing!
+    
+        To avoid this you need to avoid using this tag anywhere in your Javascript,
+    
+        and
+    
+        if you must have it, you should break the string out like this '</scr'+'ipt>' */
+        document.writeln('<p>value is </p>');
+
+    </script>
+</body>
+
+</html>
