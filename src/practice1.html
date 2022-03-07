@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // var person = new Object;
+        // person.name = 'hussain'
+        // person.hairColor = 'black'
+        // person.age = 20
+        // person.upDateAge = function () {
+        //     return ++person.age;
+        // }
+        // console.log(person.age)
+        // person.upDateAge()
+        // console.log(person.age);
+        //constructor using function.
+        function Person(name, hairColor, age) {
+            this.name = name;
+            this.hairColor = hairColor;
+            this.age = age;
+
+            this.upDateAge = function () {
+                return ++this.age;
+            };
+        }
+
+        let person01 = new Person("hussain", "black", 21); let person02 = new Person("hassain", "black", 21);
+
+        console.log(person01.upDateAge());
+    </script>
+
+
+</body>
+
+</html>

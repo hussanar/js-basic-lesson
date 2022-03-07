@@ -1,0 +1,70 @@
+<script>
+    var item = ['hi', true, 432, "main things "];
+
+    item.push("hi there")
+    console.log(item);
+    console.log(item)
+    item.push("######")
+    console.log(item)
+    item.pop();
+    console.log(item)
+    item.pop(3)
+    console.log(item)
+    item.slice(2)
+    console.log(item)
+    //______________________________
+    //name function 
+    function name(a) {
+        var greeting = " hi! My Namis hussain " + a
+        //console.log(greeting)
+        return greeting;
+    }
+
+    name()
+    console.log(name("hassain"))
+    //_________________________________
+    //annonimous function
+    var testExample = function () {
+        var greeting = " Hi! My namis hussain " + a;
+        return greeting;
+    }
+    var a = "hassain";
+    console.log(testExample())
+        //____________________________
+        //immediately invoced function
+        (function () {
+            var greeting = "hi people ho ware you";
+            console.log(greeting);
+        }())
+//__________________________________
+
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        value 1:<input type="text" id="value1">
+        value 2:<input type="text" id="value2">
+        operator:
+        <select>
+            <option value="add">Add</option>
+            <option value="sub">Sub</option>
+            <option value="div">Div</option>
+            <option value="Mul">Mul</option>
+        </select>
+        <button type="button">
+            calculate
+        </button>
+    </form>
+    <script src="/cslc.js"></script>
+</body>
+
+</html>

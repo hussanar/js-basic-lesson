@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        value 1:<input type="text" id="value1">
+        value 2:<input type="text" id="value2">
+        operator:
+        <select id="operator">
+            <option value="add">Add</option>
+            <option value="sub">Sub</option>
+            <option value="Mul">Mul</option>
+            <option value="Div">Div</option>
+        </select>
+        <button type="button" onClick="calc() ">
+            calculate
+        </button>
+    </form>
+    <script>
+        function calc() {
+            const a = parseInt(document.querySelector('#value1').value)
+            const b = parseInt(document.querySelector('#value2').value)
+            var op = document.querySelector('#operator').value;
+            let calculate
+
+            if (op == 'add') {
+                calculate = a + b
+            } else if (op == 'sub') {
+                calculate = a - b
+            } else if (op == 'Mul') {
+                calculate = a * b
+            } else if (op == 'Div') {
+                calculate = a / b
+            }
+            console.log(calculate)
+
+        }
+    </script>
+</body>
+
+</html>
